@@ -1,0 +1,56 @@
+@use '../../assets/utilities/variables' as *;
+
+
+.header-container {
+    max-width: 1240px;
+    width: 90%;
+    margin: 30px 0;
+
+
+    &__nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link a{
+        color: $primarycolor;
+        text-decoration: none;
+        padding-left: 30px;
+        font-size: 24px;
+        font-weight: 500;
+    &:hover {
+        text-decoration: underline;
+    }
+    }
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+
+@media only screen and (max-width: 1024px) {
+    .header-container {
+        width: 90%;
+    }
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 768px) */
+
+@media only screen and (max-width: 768px) {
+
+    .header-container {
+
+        &__nav img {
+          width: 125px;
+        }
+
+        &__link a{
+            padding-left: 10px;
+            font-size: 16px;
+
+        }
+    }
+};
+
