@@ -1,0 +1,41 @@
+@use '../../assets/utilities/variables' as *;
+
+
+.rentlabel-main {
+    color: $primarycolor;
+
+
+    &__title {
+
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 57px;
+            text-align: left;
+
+    }
+
+    &__text {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            text-align: left;
+    }
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 768px) */
+
+@media only screen and (max-width: 768px) {
+    .rentlabel-main {
+
+        &__title {
+            line-height: 26px;
+            font-size: 18px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}

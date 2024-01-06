@@ -1,0 +1,30 @@
+@use '../../assets/utilities/variables' as *;
+
+
+.tags-main {
+    padding-inline: 10px;
+    height: 25px;
+    background: $primarycolor;
+    color: $secondarycolor;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    white-space: nowrap;
+
+
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 768px) */
+
+@media only screen and (max-width: 768px) {
+    .tags-main {
+
+        &__text {
+            font-size: 12px;
+        }
+    }
+}
