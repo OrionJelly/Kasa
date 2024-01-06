@@ -1,0 +1,43 @@
+.host-main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 15px;
+
+    &__img {
+        height: 54px;
+        width: 54px;
+        border-radius: 54px;
+    }
+
+    &__text {
+        text-align: right;
+        color: #FF6060;
+
+        font-size: 18px;
+        font-weight: 500;
+        width: 80px
+    }
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 768px) */
+
+@media only screen and (max-width: 768px) {
+.host-main {
+
+
+        &__img {
+            min-height: 32px;
+            min-width: 32px;
+            border-radius: 54px;
+        }
+
+        &__text {
+            text-align: right;
+            color: #FF6060;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+}
