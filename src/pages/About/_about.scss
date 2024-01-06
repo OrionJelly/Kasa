@@ -1,0 +1,38 @@
+main {
+    width: 1240px;
+}
+
+
+
+.section-container {
+    margin-top: 30px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+
+@media only screen and (max-width: 1024px) {
+
+    .section-container {
+        width: 90%;
+
+    }
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 768px) */
+
+@media only screen and (max-width: 768px) {
+
+    .section-container {
+        width: 100%;
+
+    }
+}
