@@ -1,0 +1,77 @@
+@use '../../assets/utilities/variables' as *;
+
+
+// Conteneur principal
+.slide-container {
+    position: relative;
+    width: 100%;
+    height: 415px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $secondarycolor;
+
+// Compteur
+    &__count {
+            position: absolute;
+            top: 88%;
+        }
+
+
+}
+
+
+//Conteneur de l'image
+.slide-main {
+    width: 100%;
+    height: 100%;
+
+
+
+    &__img {
+        width: 100%;
+        border-radius: 25px;
+        height: 415px;
+        object-fit: cover;
+
+
+    }
+
+    &__arrow{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 768px) */
+
+@media only screen and (max-width: 768px) {
+    // Gestion de la hauteur du slider
+    .slide-container {
+        height: 225px;
+    }
+
+    .slide-main {
+
+        // Gestion de la taille des flèches
+        &__img{
+            height: 225px;
+        }
+
+        &__arrowL {
+            width: 15%;
+        }
+                &__arrowR {
+                    width: 15%;
+                }
+
+    }
+}
