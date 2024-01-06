@@ -1,0 +1,91 @@
+@use '../../assets/utilities/variables' as *;
+
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 223px;
+    border-radius: 25px;
+
+
+    &__img {
+        width: 100%;
+        height: 223px;
+        object-fit: cover;
+        border-radius: 25px;
+
+    }
+
+    &__title {
+        position: absolute;
+        width: 100%;
+        height: 223px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.1);
+
+
+        & h1 {
+            position: relative;
+                font-size: 48px;
+                color: $secondarycolor;
+
+        }
+    }
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+
+@media only screen and (max-width: 1024px) {
+    .banner-container {
+            height: 200px;
+
+
+
+            &__img {
+                height: 200px;
+            }
+
+            &__title {
+                height: 200px;
+
+                & h1 {
+                    padding: 0 10px;
+                    font-size: 34px;
+
+                }
+            }
+
+        }
+}
+
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 768px) */
+
+@media only screen and (max-width: 768px) {
+
+    .banner-container {
+        width: 100%;
+        height: 111px;
+
+
+
+        &__img {
+            height: 111px;
+        }
+
+        &__title {
+            height: 111px;
+
+            & h1 {
+                font-size: 24px;
+
+            }
+        }
+
+    }
+}
