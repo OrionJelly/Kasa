@@ -1,6 +1,6 @@
 /****
- Composant Gallery qui permet d'itérer sur un tableau grâce à la fonction .map et de retourner le composant Card se lon le nombre d'entrer dans le tableau, comprend 1 props :
- => {list} qui permet d'indiquer le tableau à retourner
+ Composant Gallery qui permet d'itérer sur un tableau grâce à la fonction .map et de retourner le composant Card selon le nombre d'entrées dans le tableau, comprend 1 props :
+ => {list} qui permet d'indiquer quel tableau utiliser
  ****/
 
 import Card from '../Card'
