@@ -57,7 +57,6 @@ const router = createBrowserRouter([
             {
                 path: '/rent/:rentId',
                 element: <Rent list={rentList} />,
-                errorElement: <ErrorPage />
             },
             {
                 path: '*',
