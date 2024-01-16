@@ -5,5 +5,20 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
+
+.mbline {
+    display: none;
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 768px) */
+
+@media only screen and (max-width: 450px) {
+
+    .mbline {
+        display: block;
+    }
 }
 
